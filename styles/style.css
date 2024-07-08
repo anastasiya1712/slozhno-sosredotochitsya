@@ -3,3 +3,37 @@
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
 }
+
+.decorated-zone {
+  width: 1024px;
+  height: 768px;
+  background-color: #191970; /*?*/
+}
+
+.header__theme-menu-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+  font-family: "IBM Plex Mono", sans-serif;
+  text-transform: lowercase; /*?*/
+}
+
+.header__big-text {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: "IBM Plex Mono", sans-serif;
+  font-weight: 700;
+  font-size: 157px;
+}
+
+.header__title {
+  max-width: 491px;
+  margin-top: 400px; /*?*/
+  margin-left: 513px;
+  font-family: "IBM Plex Mono", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+}
