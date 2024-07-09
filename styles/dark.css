@@ -11,8 +11,11 @@
   */
 
   color: #ff0070;
-  font-weight: 400;
-  font-size: 18px;
+}
+
+.header {
+  background-image: url(../images/cover-image-dark.png);
+  background-size: cover;
 }
 
 .header__big-text {
@@ -22,4 +25,22 @@
 .header__title {
   color: #000028;
   background-color: #ff0070;
+}
+
+.header__theme-menu-button_type_dark {
+  border: 1px solid #ff0070;
+}
+
+.header__theme-menu-button_type_light {
+  &:hover {
+    border: 1px solid #ff007066;
+  }
+
+  &:focus {
+    border: none;
+    text-decoration: underline;
+    text-decoration-color: #ff0070;
+    text-decoration-thickness: 1px;
+    text-underline-position: under;
+  }
 }
