@@ -18,11 +18,11 @@
   background-size: cover;
 }
 
-.header__big-text {
+.header__title {
   color: #db00ff;
 }
 
-.header__title {
+.header__text {
   color: #000028;
   background-color: #ff0070;
 }
@@ -43,4 +43,38 @@
     text-decoration-thickness: 1px;
     text-underline-position: under;
   }
+}
+
+.header__rec {
+  position: absolute;
+  right: 29px; /*?*/
+  color: #ff0070;
+  font-family: "IBM Plex Mono", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.header__neon {
+  /*?*/
+  position: absolute;
+  top: 7px;
+  right: 26px;
+  width: 9px;
+  padding-top: 9px;
+  border: 1px solid #ff0070;
+  border-radius: 50%;
+  background-color: #ff0070;
+}
+
+.main {
+  background-color: #000028;
+}
+
+.footer {
+  background-color: #000028;
+}
+
+.footer__title {
+  color: #db00ff;
 }
