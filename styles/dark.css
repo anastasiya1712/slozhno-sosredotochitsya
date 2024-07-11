@@ -27,6 +27,11 @@
   background-color: #ff0070;
 }
 
+.header::before,
+.header::after {
+  color: #ff0070;
+}
+
 .header__theme-menu-button_type_dark {
   border: 1px solid #ff0070;
 }
@@ -47,23 +52,26 @@
 
 .header__rec {
   position: absolute;
-  right: 29px; /*?*/
+  top: 20px;
+  right: 48px;
+  z-index: 1;
   color: #ff0070;
   font-family: "IBM Plex Mono", sans-serif;
   font-weight: 400;
   font-size: 18px;
+  line-height: 25px;
   text-transform: uppercase;
 }
 
-.header__neon {
-  /*?*/
+.header__rec-circle {
   position: absolute;
-  top: 7px;
-  right: 26px;
+  top: 28px;
+  right: 29px;
+  z-index: 1;
   width: 9px;
-  padding-top: 9px;
-  border: 1px solid #ff0070;
+  height: 9px;
   border-radius: 50%;
+  box-shadow: 0 0 4px 2px #ff0070;
   background-color: #ff0070;
 }
 
