@@ -101,19 +101,125 @@
   margin-bottom: 80px;
 }
 
-.section__first {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  height: 838px;
-  margin-left: 355px;
+.section__first,
+.section__second,
+.section__third {
+  font-family: "IBM Plex Mono", sans-serif;
 }
 
-.section__first-title {
-  max-width: 315px;
+.section__first {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  height: 508px;
+  margin-top: 60px;
+  margin-bottom: 80px;
+}
+
+.section__title {
+  justify-content: flex-start;
+  min-width: 315px;
   margin-left: 20px;
   font-weight: 700;
   font-size: 18px;
+}
+
+.section__first-text,
+.section__first-text-one,
+.section__first-text-two {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.section__text {
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.section__title-text {
+  align-items: center;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.section__text,
+.section__title-text {
+  margin-right: 20px;
+}
+
+.section__second {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  height: 498px;
+}
+
+.section__second-display {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin-left: 20px;
+}
+
+.section__second-display-one,
+.section__second-display-two,
+.section__second-display-three {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.section__third {
+  width: 100%;
+  height: 1015px;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.container-pictures {
+  display: grid;
+  grid-template-columns: repeat(3, 315px);
+  grid-template-rows: repeat(3, 315px);
+  grid-template-areas:
+    "picture-sun picture-sun picture-ice"
+    "picture-tape picture-book picture-ice"
+    "picture-tape picture-street picture-street";
+  gap: 20px;
+
+  width: 100%;
+  margin-left: 20px;
+}
+
+.picture-sun {
+  grid-area: picture-sun;
+  background-image: url(../images/sunset.png);
+  background-size: cover;
+}
+
+.picture-ice {
+  grid-area: picture-ice;
+  background-image: url(../images/ice-cream.png);
+  background-size: cover;
+}
+
+.picture-tape {
+  grid-area: picture-tape;
+  background-image: url(../images/tape.png);
+  background-size: cover;
+}
+
+.picture-book {
+  grid-area: picture-book;
+  background-image: url(../images/books.png);
+  background-size: cover;
+}
+
+.picture-street {
+  grid-area: picture-street;
+  background-image: url(../images/street.png);
+  background-size: cover;
 }
 
 .footer {
