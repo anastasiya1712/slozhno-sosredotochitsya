@@ -122,6 +122,12 @@
   font-size: 18px;
 }
 
+.section__title-text-mini {
+  margin-right: 20px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
 .section__first-text,
 .section__first-text-one,
 .section__first-text-two {
@@ -161,12 +167,11 @@
   margin-left: 20px;
 }
 
-.section__second-display-one,
-.section__second-display-two,
-.section__second-display-three {
+.section__second-display-text{
   display: flex;
   flex-direction: column;
   gap: 10px;
+  margin-right: 20px;
 }
 
 .section__third {
@@ -174,6 +179,20 @@
   height: 1015px;
   margin-top: 80px;
   margin-bottom: 80px;
+  display: flex;
+  flex-direction: row;
+}
+
+.section__third-display {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.section__third-display-text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .container-pictures {
@@ -194,30 +213,38 @@
   grid-area: picture-sun;
   background-image: url(../images/sunset.png);
   background-size: cover;
+  background-position: center;
+
 }
 
 .picture-ice {
   grid-area: picture-ice;
   background-image: url(../images/ice-cream.png);
   background-size: cover;
+  background-position: center;
 }
 
 .picture-tape {
   grid-area: picture-tape;
   background-image: url(../images/tape.png);
   background-size: cover;
+  background-position: center;
 }
 
 .picture-book {
   grid-area: picture-book;
   background-image: url(../images/books.png);
   background-size: cover;
+  background-position: center;
+
 }
 
 .picture-street {
   grid-area: picture-street;
   background-image: url(../images/street.png);
   background-size: cover;
+  background-position: center;
+
 }
 
 .footer {
