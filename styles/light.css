@@ -9,4 +9,70 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+  /*color: #353430;*/
+
+  .header {
+    background-image: url(../images/cover-image-light.png);
+    background-size: cover;
+  }
+  
+  .header__title {
+    color:#FFC2E6;
+    
+  }
+  
+  .header__text {
+    color: #353430;
+    background-color: #FF8DCB;
+  }
+  
+  .header::before,
+  .header::after {
+    color: #353430;
+  }
+  
+  .header__theme-menu-button_type_light {/*?*/
+    border: 1px solid #353430;
+  
+  }
+  
+  .header__theme-menu-button_type_dark {
+    &:hover {
+      border: 1px solid #353430;
+    }
+  
+    &:focus {
+      border: none;
+      text-decoration: underline;
+      text-decoration-color: #353430;
+      text-decoration-thickness: 1px;
+      text-underline-position: under;
+    }
+  }
+
+
+  .main {
+    background-color: #fff;
+  }
+  
+  .section__paragraph {
+    color:#353430;
+    ;
+  }
+  
+  
+  .section__title-text,
+  .section__title-text-mini {
+    color: #353430;
+    background-color: ?;
+  }
+  
+  .footer {
+    background-color: #fff;
+  }
+  
+  .footer__title {
+    color: #FFC2E6;
+    ;
+  }
 }
