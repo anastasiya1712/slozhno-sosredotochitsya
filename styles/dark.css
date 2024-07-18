@@ -37,9 +37,7 @@
 }
 
 .header__theme-menu-button_type_light {
-  &:hover {
-    border: 1px solid #ff007066;
-  }
+  border: 0;
 
   &:focus {
     border: none;
