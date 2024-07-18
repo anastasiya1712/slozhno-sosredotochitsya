@@ -54,7 +54,8 @@
     display: none;
   }
 
-  .main {
+  .main,
+  .footer {
     background-color: #fff1f7;
   }
 
@@ -85,9 +86,6 @@
     background-color: #ff8dcb;
   }
 
-  .footer {
-    background-color: #fff;
-  }
 
   footer::before {
     border: solid #353430;
