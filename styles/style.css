@@ -125,6 +125,11 @@
   margin-bottom: 80px;
 }
 
+.link {
+  text-decoration: none;
+  text-shadow: 2px 2px #ff8dcb;
+}
+
 .section__title {
   justify-content: flex-start;
   min-width: 315px;

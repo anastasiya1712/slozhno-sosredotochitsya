@@ -55,7 +55,20 @@
   }
 
   .main {
-    background-color: #fff;
+    background-color: #fff1f7;
+  }
+
+  .link {
+    text-shadow: 2px 2px #ff8dcb;
+
+    &:hover {
+      text-decoration: underline;
+      text-decoration-color: #353430;
+    }
+
+    &:focus {
+      background-color: 1px solid #353430;
+    }
   }
 
   .section__paragraph {

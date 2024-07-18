@@ -79,6 +79,19 @@
   background-color: #000028;
 }
 
+.link {
+  text-shadow: 2px 2px #ff0070;
+
+  &:hover {
+    text-decoration: underline;
+    text-decoration-color: #ff0070;
+  }
+
+  &:focus {
+    background-color: 1px solid #ff0070;
+  }
+}
+
 .section__paragraph {
   color: #f1b2ce;
 }
