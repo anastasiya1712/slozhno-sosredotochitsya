@@ -126,11 +126,6 @@
   }
 }
 
-@media (max-width: 374px) {
-  .header__title {
-  }
-}
-
 /*@media (max-width: 374px) {
   .header__title {
     flex-direction: column;
