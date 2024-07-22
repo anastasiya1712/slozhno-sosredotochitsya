@@ -11,8 +11,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 1024px;
-  padding: 0 20px;
   color: #ff0070;
   font-family: var(--main-font, sans-serif);
   /*color: var(--text-color, #ff0070);*/
@@ -32,16 +30,10 @@
   flex-direction: column;
   justify-content: space-between;
   width: 100%;
-  height: 767px;
+  /*height: 767px;*/
   margin-bottom: 60px;
   background-image: url(../images/cover-image-dark.png);
   background-size: cover;
-}
-
-@media (max-width: 1024px) {
-  .header {
-    min-height: 767px;
-  }
 }
 
 @media (max-width: 767px) {
@@ -112,7 +104,8 @@
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: center;
-  margin-top: 134px;
+  margin-top: 273px;
+  margin-bottom: 114px;
   color: #db00ff;
   font-family: var(--main-font, sans-serif);
   font-weight: 700;
@@ -155,12 +148,21 @@
   }
 }
 
+.header__theme-menu {
+  margin-top: 20px;
+}
+
+@media (max-width: 374px) {
+  .header__theme-menu {
+    margin-top: 75px;
+  }
+}
+
 .header__theme-menu-button {
   display: flex;
   justify-content: center;
   width: 70px;
   height: 26px;
-  margin-top: 20px;
   border: medium none;
   font-weight: 400;
   font-size: 18px;
@@ -215,8 +217,15 @@
   flex-direction: column;
   width: 100%;
   margin-bottom: 60px;
+  padding: 0 20px;
   /*height: 3352px;*/
   background-color: #000028;
+}
+
+@media (max-width: 374px) {
+  .main {
+    padding: 0;
+  }
 }
 
 .section__first,
@@ -328,6 +337,7 @@
 .section__second-display-text {
   display: flex;
   flex-direction: column;
+  flex-basis: 100%;
   gap: 10px;
 }
 
@@ -369,7 +379,11 @@
   gap: 20px;
   width: 100%;
 }
-
+@media (max-width: 374px) {
+  .container-pictures {
+    display: none; /*  дальше нужно будет поменять так, чтобы картинки, были друг под другом, как на макете*/
+  }
+}
 .picture-sun {
   grid-area: picture-sun;
   background-image: url(../images/sunset.png);
@@ -408,16 +422,14 @@
 .footer {
   position: relative;
   display: flex;
+  justify-content: center; /*?*/
+  align-items: center;
   width: 100%;
   height: 767px;
   background-color: #000028;
 }
 
 .footer__title {
-  display: flex;
-  justify-content: center; /*?*/
-  align-items: center;
-  margin-left: 277px;
   color: #db00ff;
   font-family: var(--main-font, sans-serif);
   font-weight: 700;
