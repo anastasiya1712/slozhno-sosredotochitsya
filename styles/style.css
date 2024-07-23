@@ -370,7 +370,7 @@
 .container-pictures {
   display: grid;
   grid-template-columns: repeat(3, 315px);
-  grid-template-rows: repeat(3, 315px);
+  grid-template-rows: 260px 315px 428px;
   grid-template-areas:
     "picture-sun picture-sun picture-ice"
     "picture-tape picture-book picture-ice"
@@ -381,7 +381,34 @@
 }
 @media (max-width: 374px) {
   .container-pictures {
-    display: none; /*  дальше нужно будет поменять так, чтобы картинки, были друг под другом, как на макете*/
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .picture-sun {
+    width: 355px;
+    height: 142px;
+  }
+
+  .picture-ice {
+    width: 355px;
+    height: 355px;
+  }
+
+  .picture-tape {
+    width: 355px;
+    height: 237px;
+  }
+
+  .picture-book {
+    width: 355px;
+    height: 355px;
+  }
+
+  .picture-street {
+    width: 355px;
+    height: 237px;
   }
 }
 .picture-sun {
