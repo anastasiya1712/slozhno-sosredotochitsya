@@ -228,13 +228,13 @@
   }
 }
 
-.section__first,
-.section__second,
-.section__third {
+.section__about-focus,
+.section__about-concentration,
+.section__about-advice {
   font-family: var(--main-font, sans-serif);
 }
 
-.section__first {
+.section__about-focus {
   display: flex;
   flex-direction: row;
   gap: 20px;
@@ -242,7 +242,7 @@
 }
 
 @media (max-width: 374px) {
-  .section__first {
+  .section__about-focus {
     flex-direction: column;
   }
 }
@@ -280,19 +280,19 @@
   font-size: 18px;
 }
 
-.section__first-text,
-.section__first-text-one,
-.section__first-text-two {
+.section__about-focus-text,
+.section__about-focus-text-one,
+.section__about-focus-text-two {
   display: flex;
   flex-direction: column;
 }
 
-.section__first-text {
+.section__about-focus-text {
   gap: 20px;
 }
 
-.section__first-text-one,
-.section__first-text-two {
+.section__about-focus-text-one,
+.section__about-focus-text-two {
   gap: 10px;
 }
 
@@ -314,7 +314,7 @@
   background-color: #ff0070;
 }
 
-.section__second {
+.section__about-concentration {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -322,26 +322,26 @@
   margin-bottom: 80px;
 }
 
-.section__second-display {
+.section__about-concentration-display {
   display: flex;
   flex-direction: row;
   gap: 20px;
 }
 
 @media (max-width: 767px) {
-  .section__second-display {
+  .section__about-concentration-display {
     flex-direction: column;
   }
 }
 
-.section__second-display-text {
+.section__about-concentration-display-text {
   display: flex;
   flex-direction: column;
   flex-basis: 100%;
   gap: 10px;
 }
 
-.section__third {
+.section__about-advice {
   display: flex;
   flex-direction: row;
   gap: 20px;
@@ -350,19 +350,19 @@
 }
 
 @media (max-width: 374px) {
-  .section__third {
+  .section__about-advice {
     flex-direction: column;
     gap: 20px;
   }
 }
 
-.section__third-display {
+.section__about-advice-display {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
-.section__third-display-text {
+.section__about-advice-display-text {
   display: flex;
   flex-direction: column;
 }
