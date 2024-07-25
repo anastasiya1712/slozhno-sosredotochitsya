@@ -411,37 +411,39 @@
     height: 237px;
   }
 }
+
+.picture-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .picture-sun {
   grid-area: picture-sun;
-  background-image: url(../images/sunset.png);
   background-position: center;
   background-size: cover;
 }
 
 .picture-ice {
   grid-area: picture-ice;
-  background-image: url(../images/ice-cream.png);
   background-position: center;
   background-size: cover;
 }
 
 .picture-tape {
   grid-area: picture-tape;
-  background-image: url(../images/tape.png);
   background-position: center;
   background-size: cover;
 }
 
 .picture-book {
   grid-area: picture-book;
-  background-image: url(../images/books.png);
   background-position: center;
   background-size: cover;
 }
 
 .picture-street {
   grid-area: picture-street;
-  background-image: url(../images/street.png);
   background-position: center;
   background-size: cover;
 }
