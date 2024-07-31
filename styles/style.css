@@ -87,11 +87,6 @@
   }
 }
 
-@media (max-width: 375px) {
-  .header__theme-menu-list {
-  }
-}
-
 .header__title {
   display: flex;
   flex-direction: row;
