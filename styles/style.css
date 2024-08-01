@@ -7,8 +7,7 @@
   align-items: center;
   color: #ff0070;
   font-family: var(--main-font, sans-serif);
-  /*color: var(--text-color, #ff0070);*/
-  background-color: var(--bg-color, #000028); /*?*/
+  background-color: var(--bg-color, #000028);
   background-attachment: fixed;
 }
 
@@ -80,7 +79,6 @@
 }
 
 @media (max-width: 768px) {
-  /*добавила 1px, чтобы была колонка*/
   .header__theme-menu-list {
     flex-direction: column;
     align-items: flex-end;
@@ -112,14 +110,6 @@
     line-height: 95.7px;
   }
 }
-
-/*@media (max-width: 374px) {
-  .header__title {
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-  }
-}*/
 
 .header__text {
   justify-self: flex-end;
@@ -162,29 +152,26 @@
   justify-content: center;
   width: 70px;
   height: 26px;
-  border: medium none;
+  border: none;
   color: var(--text-button-color);
   font-weight: 400;
   font-size: 18px;
   text-transform: lowercase;
   background: transparent;
+
+  &:focus {
+    border-bottom: 1px solid;
+    outline: none;
+  }
+}
+
+.header__theme-menu-item:hover {
+  outline: 1px solid var(--button-outline-hover-color);
 }
 
 .header__theme-menu-button_active {
-  border: 1px solid #ff0070;
+  outline: 1px solid var(--button-outline-color);
   pointer-events: none;
-}
-
-.header__theme-menu-button_type_light {
-  border: 0;
-
-  &:focus {
-    border: none;
-    text-decoration: underline;
-    text-decoration-color: #ff0070;
-    text-decoration-thickness: 1px;
-    text-underline-position: under;
-  }
 }
 
 .header__rec {
@@ -246,23 +233,42 @@
   gap: 10px;
 }
 
-.section__about-focus,
-.section__about-concentration,
-.section__about-advice {
+.section {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  margin-bottom: 80px;
   font-family: var(--main-font, sans-serif);
 }
 
-.section__about-focus {
+@media (max-width: 500px) {
+  .section {
+    margin-bottom: 50px;
+  }
+}
+
+.section__block {
   display: flex;
-  flex-direction: row;
   gap: 20px;
-  margin-bottom: 80px;
+}
+
+.section__block-paragraph {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+}
+
+.section__about-focus-text {
+  flex-direction: column;
+}
+
+.section__about-focus {
+  flex-direction: row;
 }
 
 @media (max-width: 500px) {
   .section__about-focus {
     flex-direction: column;
-    margin-bottom: 50px;
   }
 }
 
@@ -272,7 +278,7 @@
   text-shadow: 2px 2px #ff0070;
 
   &:focus {
-    background-color: 1px solid #ff0070;
+    outline: 1px solid var(--link-outline-color);
   }
 }
 
@@ -283,7 +289,7 @@
   left: 0;
   width: 100%;
   height: 1px;
-  background-color: #f1b2ce; /*?*/
+  background-color: #f1b2ce;
 }
 
 .section__title {
@@ -312,15 +318,10 @@
   font-size: 18px;
 }
 
-.section__about-focus-text,
 .section__about-focus-text-one,
 .section__about-focus-text-two {
   display: flex;
   flex-direction: column;
-}
-
-.section__about-focus-text {
-  gap: 20px;
 }
 
 .section__about-focus-text-one,
@@ -347,24 +348,16 @@
 }
 
 .section__about-concentration {
-  display: flex;
   flex-direction: column;
-  gap: 20px;
-  width: 100%;
-  margin-bottom: 80px;
-}
-
-@media (max-width: 500px) {
-  .section__about-concentration {
-    margin-bottom: 50px;
-  }
 }
 
 .section__about-concentration-display {
-  display: flex;
   flex-direction: row;
-  flex-wrap: nowrap; /*????в комменте было wrap, но тогда колонки переходят в стоку*/
-  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.section__about-concentration-display-text {
+  flex-basis: calc((100% - 40px) / 3);
 }
 
 @media (max-width: 768px) {
@@ -373,37 +366,21 @@
   }
 }
 
-.section__about-concentration-display-text {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 100%;
-}
-
 .section__about-advice {
-  display: flex;
   flex-direction: row;
-  gap: 20px;
-  width: 100%;
-  margin-bottom: 80px;
 }
 
 @media (max-width: 500px) {
   .section__about-advice {
     flex-direction: column;
-    gap: 20px;
-    margin-bottom: 50px;
   }
 }
 
 .section__about-advice-display {
-  display: flex;
   flex-direction: column;
-  gap: 20px;
 }
 
 .section__about-advice-display-text {
-  display: flex;
-  flex-direction: column;
   gap: 20px;
 }
 
@@ -504,7 +481,7 @@
 .footer {
   position: relative;
   display: flex;
-  justify-content: center; /*?*/
+  justify-content: center;
   align-items: center;
   width: 100%;
   height: 100vh;

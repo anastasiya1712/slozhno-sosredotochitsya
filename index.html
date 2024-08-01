@@ -8,10 +8,10 @@
     <title>Сложно сосредоточиться</title>
     <link rel="stylesheet" href="./fonts/fonts.css" />
     <link rel="stylesheet" href="./styles/variables.css" />
+    <link rel="stylesheet" href="./styles/globals.css" />
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/dark.css" />
     <link rel="stylesheet" href="./styles/light.css" />
-    <link rel="stylesheet" href="./styles/globals.css" />
   </head>
   <body class="page">
     <header class="header decorated-zone">
@@ -50,9 +50,9 @@
       <span class="header__rec-circle"></span>
     </header>
     <main class="main">
-      <section class="section__about-focus">
+      <section class="section__about-focus section">
         <h2 class="section__title">Почему сосредоточиться так сложно</h2>
-        <div class="section__about-focus-text">
+        <div class="section__about-focus-text section__block">
           <div
             class="section__about-focus-text-multitasking section__text-block"
           >
@@ -89,9 +89,9 @@
           </div>
         </div>
       </section>
-      <section class="section__about-concentration">
+      <section class="section__about-concentration section">
         <h2 class="section__title">Что снижает концентрацию внимания?</h2>
-        <div class="section__about-concentration-display">
+        <div class="section__about-concentration-display section__block">
           <div
             class="section__about-concentration-display-text section__text-block"
           >
@@ -134,16 +134,16 @@
           </div>
         </div>
       </section>
-      <section class="section__about-advice">
+      <section class="section__about-advice section">
         <h2 class="section__title">
           Как концентрироваться лучше, чем золотая рыбка (то есть дольше трёх
           секунд)
         </h2>
-        <div class="section__about-advice-display">
+        <div class="section__about-advice-display section__block">
           <h3 class="section__title-text">
             5 простых (на самом деле не очень) советов
           </h3>
-          <div class="section__about-advice-display-text">
+          <div class="section__about-advice-display-text section__block-paragraph">
             <div class="section__text-block">
               <h4 class="section__title-text-mini">
                 Представьте небо и облака
@@ -209,23 +209,23 @@
         </div>
       </section>
       <section class="section__images">
-        <div class="section__title-text">А можно в картинках?</div>
+        <h2 class="section__title-text">А можно в картинках?</h2>
         <div class="container-pictures">
-          <div class="picture-sun">
-            <img class="picture-img" src="./images/sunset.png" />
-          </div>
-          <div class="picture-ice">
-            <img class="picture-img" src="./images/ice-cream.png" />
-          </div>
-          <div class="picture-tape">
-            <img class="picture-img" src="./images/tape.png" />
-          </div>
-          <div class="picture-book">
-            <img class="picture-img" src="./images/books.png" />
-          </div>
-          <div class="picture-street">
-            <img class="picture-img" src="./images/street.png" />
-          </div>
+          <picture class="picture-sun">
+            <img class="picture-img" src="./images/sunset.png" alt="солнце поднимается над горами" />
+          </picture>
+          <picture class="picture-ice">
+            <img class="picture-img" src="./images/ice-cream.png" alt="мороженное с глазами" />
+          </picture>
+          <picture class="picture-tape">
+            <img class="picture-img" src="./images/tape.png" alt="цветная касета" />
+          </picture>
+          <picture class="picture-book">
+            <img class="picture-img" src="./images/books.png" alt="стопка книг"/>
+          </picture>
+          <picture class="picture-street">
+            <img class="picture-img" src="./images/street.png" alt="фиолетовая улица"/>
+          </picture>
         </div>
       </section>
     </main>

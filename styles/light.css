@@ -15,6 +15,9 @@
   --text-button-color: #353430;
   --corner-color: #353430;
   --title-color: #ffc2e6;
+  --button-outline-hover-color: #32312D66;
+  --button-outline-color: #353430;
+  --link-outline-color: #353430;
 
   .header {
     background-color: #fff1f7;
@@ -25,11 +28,6 @@
   .header__text {
     color: #353430;
     background-color: #ff8dcb;
-  }
-
-  .header__theme-menu-button_type_light {
-    /*?*/
-    border: 1px solid #353430;
   }
 
   .header__rec,
@@ -46,10 +44,6 @@
     position: relative;
     text-decoration: none;
     text-shadow: 2px 2px #ff8dcb;
-
-    &:focus {
-      background-color: 1px solid #353430;
-    }
   }
 
   .section__paragraph {

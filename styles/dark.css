@@ -15,18 +15,7 @@
   --text-button-color: #ff0070;
   --corner-color: #ff0070;
   --title-color: #db00ff;
-}
-
-.header__theme-menu-button_type_dark {
-  &:hover {
-    border: 1px solid #353430;
-  }
-
-  &:focus {
-    border: none;
-    text-decoration: underline;
-    text-decoration-color: #353430;
-    text-decoration-thickness: 1px;
-    text-underline-position: under;
-  }
+  --button-outline-hover-color: #ff007066;
+  --button-outline-color: #ff0070;
+  --link-outline-color: #f1b2ce;
 }
