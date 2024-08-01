@@ -9,4 +9,24 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+
+  --bg-color: #000028;
+  --text-color: #ff0070;
+  --text-button-color: #ff0070;
+  --corner-color: #ff0070;
+  --title-color: #db00ff;
+}
+
+.header__theme-menu-button_type_dark {
+  &:hover {
+    border: 1px solid #353430;
+  }
+
+  &:focus {
+    border: none;
+    text-decoration: underline;
+    text-decoration-color: #353430;
+    text-decoration-thickness: 1px;
+    text-underline-position: under;
+  }
 }
