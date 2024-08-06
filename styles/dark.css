@@ -4,6 +4,28 @@
   переключая тему
 */
 
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: #000028;
+    --bg-image: url(../images/cover-image-dark.png);
+    --text-color: #ff0070;
+    --header-text-color: #000028;
+    --header-text-background-color: #ff0070;
+    --header-rec-condition: flex;
+    --text-button-color: #ff0070;
+    --corner-color: #ff0070;
+    --title-color: #db00ff;
+    --button-outline-hover-color: #ff007066;
+    --button-outline-color: #ff0070;
+    --link-outline-color: #f1b2ce;
+    --link-text-shadow-color: #ff0070;
+    --section-paragraph-color: #f1b2ce;
+    --section-title-color: #ff0070;
+    --section-title-text-color: #000028;
+    --section-title-text-background-color: #ff0070;
+  }
+}
+
 .page.theme_dark {
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
@@ -11,11 +33,20 @@
   */
 
   --bg-color: #000028;
+  --bg-image: url(../images/cover-image-dark.png);
   --text-color: #ff0070;
+  --header-text-color: #000028;
+  --header-text-background-color: #ff0070;
+  --header-rec-condition: flex;
   --text-button-color: #ff0070;
   --corner-color: #ff0070;
   --title-color: #db00ff;
   --button-outline-hover-color: #ff007066;
   --button-outline-color: #ff0070;
   --link-outline-color: #f1b2ce;
+  --link-text-shadow-color: #ff0070;
+  --section-paragraph-color: #f1b2ce;
+  --section-title-color: #ff0070;
+  --section-title-text-color: #000028;
+  --section-title-text-background-color: #ff0070;
 }

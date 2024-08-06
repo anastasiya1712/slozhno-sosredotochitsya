@@ -4,6 +4,28 @@
   переключая тему
 */
 
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg-color: #fff1f7;
+    --bg-image: url(../images/cover-image-light.png);
+    --text-color: #353430;
+    --header-text-color: #353430;
+    --header-text-background-color: #ff8dcb;
+    --header-rec-condition: none;
+    --text-button-color: #353430;
+    --corner-color: #353430;
+    --title-color: #ffc2e6;
+    --button-outline-hover-color: #32312d66;
+    --button-outline-color: #353430;
+    --link-outline-color: #353430;
+    --link-text-shadow-color: #ff8dcb;
+    --section-paragraph-color: #353430;
+    --section-title-color: #353430;
+    --section-title-text-color: #353430;
+    --section-title-text-background-color: #ff8dcb;
+  }
+}
+
 .page.theme_light {
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
@@ -11,52 +33,20 @@
   */
 
   --bg-color: #fff1f7;
+  --bg-image: url(../images/cover-image-light.png);
   --text-color: #353430;
+  --header-text-color: #353430;
+  --header-text-background-color: #ff8dcb;
+  --header-rec-condition: none;
   --text-button-color: #353430;
   --corner-color: #353430;
   --title-color: #ffc2e6;
-  --button-outline-hover-color: #32312D66;
+  --button-outline-hover-color: #32312d66;
   --button-outline-color: #353430;
   --link-outline-color: #353430;
-
-  .header {
-    background-color: #fff1f7;
-    background-image: url(../images/cover-image-light.png);
-    background-size: cover;
-  }
-
-  .header__text {
-    color: #353430;
-    background-color: #ff8dcb;
-  }
-
-  .header__rec,
-  .header__rec-circle {
-    display: none;
-  }
-
-  .main,
-  .footer {
-    background-color: #fff1f7;
-  }
-
-  .link {
-    position: relative;
-    text-decoration: none;
-    text-shadow: 2px 2px #ff8dcb;
-  }
-
-  .section__paragraph {
-    color: #353430;
-  }
-
-  .section__title {
-    color: #353430;
-  }
-
-  .section__title-text,
-  .section__title-text-mini {
-    color: #353430;
-    background-color: #ff8dcb;
-  }
+  --link-text-shadow-color: #ff8dcb;
+  --section-paragraph-color: #353430;
+  --section-title-color: #353430;
+  --section-title-text-color: #353430;
+  --section-title-text-background-color: #ff8dcb;
 }
