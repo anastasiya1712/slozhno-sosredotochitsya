@@ -158,11 +158,11 @@
   font-size: 18px;
   text-transform: lowercase;
   background: transparent;
+}
 
-  &:focus {
-    border-bottom: 1px solid;
-    outline: none;
-  }
+.header__theme-menu-button:focus {
+  border-bottom: 1px solid;
+  outline: none;
 }
 
 .header__theme-menu-item:hover {
@@ -278,10 +278,10 @@
   position: relative;
   text-decoration: none;
   text-shadow: 2px 2px var(--link-text-shadow-color);
+}
 
-  &:focus {
-    outline: 1px solid var(--link-outline-color);
-  }
+.link:focus {
+  outline: 1px solid var(--link-outline-color);
 }
 
 .link:hover::after {
